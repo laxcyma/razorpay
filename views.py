@@ -28,9 +28,9 @@ def payment_panel(request):
                 'key_id':'rzp_test_5QkTsF3niAwffV'
 
             }
-            return render(request, 'index1.html', context)
+            return render(request, 'index.html', context)
     # Create a Razorpay Order
-    return render(request, 'index1.html')
+    return render(request, 'index.html')
     
 # example =  {'id': 'order_Mjd5DMLJlcw7GZ', 'entity': 'order', 'amount': 10000, 'amount_paid': 0, 'amount_due': 10000, 'currency': 'INR', 'receipt': None, 'offer_id': None, 'status': 'created', 'attempts': 0, 'notes': [], 'created_at': 1696313248}
 
