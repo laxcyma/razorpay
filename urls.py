@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+from . import razorpay
 
 urlpatterns = [
     path('config/',views.payment_panel, name='payment_panel'),
