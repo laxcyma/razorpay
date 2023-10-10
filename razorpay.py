@@ -54,11 +54,11 @@ def payment_status(request):
                 payrazor.razorpay_payment_id = response.get('razorpay_payment_id')
                 payrazor.paid = True
                 payrazor.save()
-                return render(request, 'paymentsuccess.html')
+                return render(request, 'templates/paymentsuccess.html')
             else:
-                return render(request, 'paymentfail.html')
+                return render(request, 'templates/paymentfail.html')
         except Exception as e:
             print(str(e))
-            return render(request, 'paymentfail.html')
+            return render(request, 'templates/paymentfail.html')
     else:
         return HttpResponse("Invalid request method")
