@@ -5,17 +5,6 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
 
-# ------- from document -----------
-from django.conf import settings
-from django.http import HttpResponseRedirect
-
-from .conf import conf
-
-from fleio.billing.gateways.decorators import gateway_action, staff_gateway_action
-from fleio.billing.gateways import exceptions as gateway_exceptions
-
-from fleio.core.utils import fleio_join_url
-
 # Create your views here.
 
 # rzp_test_5DStG6Sxae0ne1
